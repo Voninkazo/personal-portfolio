@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import AboutContainer from './containers/About';
+import ProjectsContainer from './containers/projects';
+
 
 function App() {
     return (
-        <div>
-            Hello world
+        <div className="wrapper">
+           <AboutContainer />
+           <ProjectsContainer />
         </div>
     )
 }
