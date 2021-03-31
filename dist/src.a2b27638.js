@@ -33686,7 +33686,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function AboutContainer() {
   return /*#__PURE__*/_react.default.createElement("aside", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "header_container"
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
     className: "profile",
     src: _profile.default,
     alt: "Profile image"
@@ -33694,7 +33696,7 @@ function AboutContainer() {
     className: "name"
   }, /*#__PURE__*/_react.default.createElement("p", null, "Sandy Rav")), /*#__PURE__*/_react.default.createElement("div", {
     className: "description_container"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "I am a web developer focusing on front-end development. Always hungry to keep learning."))), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "--Contact me---"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("p", null, "I am a web developer focusing on front-end development. Always hungry to keep learning.")))), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "--Contact me---"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "https://github.com/Voninkazo",
     className: "gihub"
   }, /*#__PURE__*/_react.default.createElement("svg", {
@@ -33775,10 +33777,10 @@ function ProjectsContainer() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "project_container container"
   }, allProjects.map(function (project, index) {
-    return /*#__PURE__*/_react.default.createElement("a", {
-      href: project.demo,
+    return /*#__PURE__*/_react.default.createElement("article", {
       key: index
-    }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("div", {
+    }, /*#__PURE__*/_react.default.createElement("a", {
+      href: project.demo,
       className: "img_container"
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: project.screenshot,
@@ -33786,8 +33788,8 @@ function ProjectsContainer() {
     })), /*#__PURE__*/_react.default.createElement("div", {
       className: "info_container"
     }, /*#__PURE__*/_react.default.createElement("h2", null, /*#__PURE__*/_react.default.createElement("a", {
-      href: "/"
-    }, project.name)), /*#__PURE__*/_react.default.createElement("p", null, project.description))));
+      href: project.demo
+    }, project.name)), /*#__PURE__*/_react.default.createElement("p", null, project.description)));
   }));
 }
 

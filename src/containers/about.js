@@ -5,14 +5,16 @@ function AboutContainer() {
     return (
         <aside className="container">
             <header>
-                <div>
-                    <img className="profile" src={Profile} alt="Profile image"/>
-                </div>
-                <div className="name">
-                    <p>Sandy Rav</p>
-                </div>
-                <div className="description_container">
-                    <p>I am a web developer focusing on front-end development. Always hungry to keep learning.</p>
+                <div className="header_container">
+                    <div>
+                        <img className="profile" src={Profile} alt="Profile image"/>
+                    </div>
+                    <div className="name">
+                        <p>Sandy Rav</p>
+                    </div>
+                    <div className="description_container">
+                        <p>I am a web developer focusing on front-end development. Always hungry to keep learning.</p>
+                    </div>
                 </div>
             </header>
             <footer>

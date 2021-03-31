@@ -9,19 +9,18 @@ function ProjectsContainer() {
             {
                 allProjects.map((project, index) => {
                     return (
-                    <a href={project.demo} key={index}>
-                        <article>
-                            <div className="img_container">
+                   
+                        <article  key={index}>
+                            <a href={project.demo} className="img_container">
                                 <img  src={project.screenshot} alt={project.screenshot}/>
-                            </div>
+                            </a>
                             <div className="info_container">
                                 <h2>
-                                    <a href="/">{project.name}</a>
+                                    <a href={project.demo}>{project.name}</a>
                                 </h2>
                                 <p>{project.description}</p>
                             </div>
                         </article>
-                    </a>
                     )
                 })
             }

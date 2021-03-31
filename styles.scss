@@ -102,3 +102,39 @@ aside {
         box-shadow: 10px 10px 10px 10px rgb(31 35 46 / 15%);
     }
 }
+
+@media(min-width: 466px) {
+    aside {
+        .header_container {
+            max-width: 480px;
+            margin: 10px auto auto;
+        }
+    }
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+}
+
+@media(min-width: 770px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    aside {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // bottom: 0;
+        display: block;
+        width: 240px;
+        height: 100%;
+        padding: 20px 10px;
+    }
+}
